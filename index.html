@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: rgb(2, 2, 30);
+      color: white;
+    }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 60px;
+      background-color: rgb(3, 3, 50);
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      list-style: none;
+      margin: 0 25px;
+    }
+    .left {
+      font-size: 1.5rem;
+    }
+    .leftSection {
+      font-size: 3rem;
+      margin: 25px 0;
+      width: 33%;
+    }
+    .rightSection {
+      width: 33%;
+      margin: 25px 0;
+    }
+    .firstSection {
+      display: flex;
+      justify-content: space-around;
+      margin: 25px 0;
+      align-items: center;
+    }
+    .rightSection img {
+      width: 75%;
+    }
+    .purple {
+      color: rgb(167, 104, 225);
+    }
+    nav ul a {
+      text-decoration: none;
+      color: white;
+    }
+    nav ul a:hover {
+      color: rgb(167, 104, 225);
+    }
+    .secondSection {
+      max-width: 80vw;
+      margin: auto;
+      height: 50vh;
+    }
+    main hr {
+      border: 0;
+      height: 1.2px;
+      background: rgb(167, 104, 225);
+      margin: 60px 60px;
+    }
+    .grey {
+      color: grey;
+    }
+    .box {
+      background: white;
+      height: 1px;
+      margin: 25px 0;
+      display: flex;
+      justify-content: space-around;
+    }
+    .vertical {
+      background: white;
+      height: 75px;
+      width: 1px;
+    }
+    .title {
+      position: relative;
+      top: 80px;
+      width: 200px;
+    }
+    .desc {
+      position: relative;
+      top: 85px;
+      width: 200px;
+      font-size: 15px;
+      color: grey;
+    }
+    .thirdSection {
+      max-width: 80vw;
+      margin: auto;
+      height: 50vh;
+    }
+    footer {
+      background-color: rgb(25, 10, 40);
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+      font-size: 1.5rem;
+    }
+    .btn {
+      padding: 12px;
+      background: rgb(2, 2, 30);
+      color: white;
+      border: 2px solid;
+      border-radius: 5px;
+    }
+    .btn:hover {
+      background: rgb(167, 104, 225);
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Abhinav's Portfolio</div>
+        <div class="right">
+          <ul>
+            <a href=""><li>Home</li></a>
+            <a href=""><li>About</li></a>
+            <a href=""><li>Services</li></a>
+            <a href=""><li>Projects</li></a>
+            <a href=""><li>Contact Me</li></a>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi! My name is <span class="purple">Abhinav</span>
+          <div>and I am a passionate Web Developer</div>
+          <div class="button">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="grey">What I have done so far</span>
+        <h1>Internship</h1>
+        <div class="box">
+          <div class="vertical">
+            <div class="title">
+              AWS Academy Data Analytics (DEC 2022 - FEB 2023)
+            </div>
+            <div class="desc">
+              I have managed and analyzed big data with AWS services. I have
+              learned how to configure and manage storage options.
+            </div>
+          </div>
+          <div class="vertical">
+            <div class="title">
+              AWS Academy Machine Learning Foundations (MAY 2023 - JULY 2023)
+            </div>
+            <div class="desc">
+              I have implemented a machine learning pipeline by using amazon
+              sagemaker. I have managed amazon ML services for forecasting,
+              computer vision and natural language processing.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="thirdSection">
+        <span class="grey">What I have learned so far</span>
+        <h1>Technical Skills</h1>
+        <div class="box">
+          <div class="vertical">
+            <div class="title">Languages</div>
+            <div class="desc">C, C++, Java</div>
+          </div>
+          <div class="vertical">
+            <div class="title">Web Development</div>
+            <div class="desc">HTML, CSS, JavaScript, ReactJS</div>
+          </div>
+          <div class="vertical">
+            <div class="title">Other Skills</div>
+            <div class="desc">Object OrientedProgramming, My SQL</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>Thank you! for visiting my portfolio</footer>
+  </body>
+</html>
